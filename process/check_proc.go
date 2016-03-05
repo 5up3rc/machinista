@@ -1,4 +1,3 @@
-// check_proc.go
 package main
 
 import (
@@ -22,7 +21,6 @@ func getProcessList() []process.Process {
 	return proc
 }
 
-//ps -eo pid
 func getPsProcessList() []process.Process {
 	cmd := exec.Command("ps", "-eo", "pid")
 	var out bytes.Buffer
